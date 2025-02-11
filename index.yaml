@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-09-14T12:28:18.742119795Z"
+    created: "2025-02-11T17:18:09.810994848Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -34,7 +34,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-09-14T12:28:18.739552055Z"
+    created: "2025-02-11T17:18:09.809286867Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -54,7 +54,7 @@ entries:
         - kind: added
           description: Automatically set `global.nameOverride` to release name
     apiVersion: v2
-    created: "2022-09-14T12:28:18.736631009Z"
+    created: "2025-02-11T17:18:09.807130639Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -74,7 +74,7 @@ entries:
         - kind: changed
           description: Set `common` chart dependency to version 0.1.0
     apiVersion: v2
-    created: "2022-09-14T12:28:18.705194114Z"
+    created: "2025-02-11T17:18:09.804897938Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -93,6 +93,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
+          description: |-
+            Values schema is now dereferenced before packaging so it no longer relies on
+            internet connectivity to validate the schema.
+        - kind: fixed
+          description: |-
+            Add explicit namespace declaration to templates using Release.Namespace
+      org.opencontainers.image.source: https://github.com/bjw-s/helm-charts
+    apiVersion: v2
+    created: "2025-02-11T17:18:09.797238339Z"
+    description: Function library for Helm charts
+    digest: 261b216f0b8213f39fe99ea5a08be911ffd700b02f1c303f96d96d4ba8a93235
+    home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: common
+    type: library
+    urls:
+    - https://bjw-s.github.io/helm-charts/library/common-3.7.1.tgz
+    version: 3.7.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
           description: Make sure service.monitor is optional.
         - kind: removed
           description: BREAKING - Removed support for the `openvpn` and `wireguard` VPN types.
@@ -107,7 +134,7 @@ entries:
         - kind: changed
           description: Updated code-server image to v4.7.0
     apiVersion: v2
-    created: "2022-09-14T12:28:18.702058664Z"
+    created: "2025-02-11T17:18:09.769463073Z"
     description: Function library for Helm charts
     digest: 12c4fc1776a5b296b09bfc55aad12e34212be4e72e85c92f3f4bf17395e41277
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -138,7 +165,7 @@ entries:
         - kind: changed
           description: Updated code-server image to v4.7.0
     apiVersion: v2
-    created: "2022-09-14T12:28:18.699600725Z"
+    created: "2025-02-11T17:18:09.767906876Z"
     description: Function library for Helm charts
     digest: 0c20278db20419482fa1e07d5e81a7c1043f6e5d0166668f4ad797e40fb77fbb
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -159,7 +186,7 @@ entries:
         - kind: changed
           description: Initial version
     apiVersion: v2
-    created: "2022-09-14T12:28:18.69734879Z"
+    created: "2025-02-11T17:18:09.76627689Z"
     description: Function library for Helm charts
     digest: f5a30aa881582b34727862cb71b3afe7cfd6ce4ee1bb4c750355cbb569b5e06f
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -181,7 +208,7 @@ entries:
         - kind: changed
           description: Set `common` chart dependency to version 0.1.0
     apiVersion: v2
-    created: "2022-09-14T12:28:18.744798937Z"
+    created: "2025-02-11T17:18:09.812748304Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -196,4 +223,4 @@ entries:
     urls:
     - https://bjw-s.github.io/helm-charts/other/common-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-14T12:28:18.693653632Z"
+generated: "2025-02-11T17:18:09.764415262Z"
