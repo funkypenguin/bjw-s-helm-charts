@@ -17,7 +17,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
       org.opencontainers.image.source: https://github.com/bjw-s/helm-charts
     apiVersion: v2
-    created: "2025-03-04T17:17:50.542110247Z"
+    created: "2025-03-14T11:17:41.298084138Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -42,7 +42,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2025-03-04T17:17:50.537210869Z"
+    created: "2025-03-14T11:17:41.293439905Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -66,7 +66,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2025-03-04T17:17:50.5353567Z"
+    created: "2025-03-14T11:17:41.291596999Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -86,7 +86,7 @@ entries:
         - kind: added
           description: Automatically set `global.nameOverride` to release name
     apiVersion: v2
-    created: "2025-03-04T17:17:50.532580709Z"
+    created: "2025-03-14T11:17:41.289828722Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -106,7 +106,7 @@ entries:
         - kind: changed
           description: Set `common` chart dependency to version 0.1.0
     apiVersion: v2
-    created: "2025-03-04T17:17:50.530597561Z"
+    created: "2025-03-14T11:17:41.28784906Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -126,13 +126,40 @@ entries:
       artifacthub.io/changes: |-
         - kind: fixed
           description: |-
+            Fixed name suffix for HTTPRoute
+        - kind: fixed
+          description: |-
+            Fixed incorrect default backendRefs values in HTTPRoute
+    apiVersion: v2
+    created: "2025-03-14T11:17:41.285249141Z"
+    description: Function library for Helm charts
+    digest: dd143a02d3ab3323c71d94b1b9ee0f2b23d87abdb06bde5404dfb8857cb23aa6
+    home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: common
+    sources:
+    - https://github.com/bjw-s/helm-charts
+    type: library
+    urls:
+    - https://bjw-s.github.io/helm-charts/library/common-3.7.3.tgz
+    version: 3.7.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
+          description: |-
             The Apache 2.0 LICENSE file has been added to the chart.
         - kind: fixed
           description: |-
             Fixed non-deterministic selection of primary service and port.
       org.opencontainers.image.source: https://github.com/bjw-s/helm-charts
     apiVersion: v2
-    created: "2025-03-04T17:17:50.528608191Z"
+    created: "2025-03-14T11:17:41.282654132Z"
     description: Function library for Helm charts
     digest: 53d40a3c1e2ddd47d9ba1e020bc9db210d8c92ae21fdb7983298cafd1c52567f
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -159,7 +186,7 @@ entries:
             Add explicit namespace declaration to templates using Release.Namespace
       org.opencontainers.image.source: https://github.com/bjw-s/helm-charts
     apiVersion: v2
-    created: "2025-03-04T17:17:50.52580146Z"
+    created: "2025-03-14T11:17:41.279386195Z"
     description: Function library for Helm charts
     digest: 261b216f0b8213f39fe99ea5a08be911ffd700b02f1c303f96d96d4ba8a93235
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -192,7 +219,7 @@ entries:
         - kind: changed
           description: Updated code-server image to v4.7.0
     apiVersion: v2
-    created: "2025-03-04T17:17:50.522070695Z"
+    created: "2025-03-14T11:17:41.276745701Z"
     description: Function library for Helm charts
     digest: 12c4fc1776a5b296b09bfc55aad12e34212be4e72e85c92f3f4bf17395e41277
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -223,7 +250,7 @@ entries:
         - kind: changed
           description: Updated code-server image to v4.7.0
     apiVersion: v2
-    created: "2025-03-04T17:17:50.520335097Z"
+    created: "2025-03-14T11:17:41.27511986Z"
     description: Function library for Helm charts
     digest: 0c20278db20419482fa1e07d5e81a7c1043f6e5d0166668f4ad797e40fb77fbb
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -244,7 +271,7 @@ entries:
         - kind: changed
           description: Initial version
     apiVersion: v2
-    created: "2025-03-04T17:17:50.518613685Z"
+    created: "2025-03-14T11:17:41.272554359Z"
     description: Function library for Helm charts
     digest: f5a30aa881582b34727862cb71b3afe7cfd6ce4ee1bb4c750355cbb569b5e06f
     home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
@@ -266,7 +293,7 @@ entries:
         - kind: changed
           description: Set `common` chart dependency to version 0.1.0
     apiVersion: v2
-    created: "2025-03-04T17:17:50.543998569Z"
+    created: "2025-03-14T11:17:41.299853638Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -281,4 +308,4 @@ entries:
     urls:
     - https://bjw-s.github.io/helm-charts/other/common-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-04T17:17:50.516504372Z"
+generated: "2025-03-14T11:17:41.270520287Z"
